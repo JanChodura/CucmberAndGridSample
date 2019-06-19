@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.cgi.calculator'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.seleniumhq.selenium:selenium-chrome-driver:2.23.0'
+    testCompile 'io.cucumber:cucumber-junit:4.3.1'
+    compile 'io.cucumber:cucumber-java:4.3.1'
+}
