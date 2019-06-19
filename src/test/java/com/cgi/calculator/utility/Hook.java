@@ -18,8 +18,8 @@ import java.util.concurrent.TimeUnit;
 public class Hook {
 
     private static WebDriver driver;
-    private static String HUB_URL = "http://localhost:5566/wd/hub";
-    private static String HUB_IE_URL = "http://localhost:5567/wd/hub";
+    private static String NODE_CHROME_URL = "http://localhost:5566/wd/hub";
+    private static String NODE_IE_URL = "http://localhost:5567/wd/hub";
 
     @Before
     public static void setUp() {
@@ -58,7 +58,7 @@ public class Hook {
         capability.setPlatform(Platform.WINDOWS);
         capability.setBrowserName("chrome");
         try {
-            driver = new RemoteWebDriver(new URL(HUB_URL), capability);
+            driver = new RemoteWebDriver(new URL(NODE_CHROME_URL), capability);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -70,7 +70,7 @@ public class Hook {
         capability.setPlatform(Platform.WINDOWS);
         capability.setBrowserName("internet explorer");
         try {
-            driver = new RemoteWebDriver(new URL(HUB_IE_URL), capability);
+            driver = new RemoteWebDriver(new URL(NODE_IE_URL), capability);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
