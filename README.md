@@ -7,15 +7,17 @@ Selenium Java
 https://seleniumhq.github.io/selenium/docs/api/java/index.html
 
 * Prerequisite
-   Chromedriver - http://chromedriver.chromium.org/downloads (approved)
-     move chromedriver to C:\Program Files (x86)\Google\ChromeDriver\
+   Chromedriver - in test/resources
    Gradle
 
 
 * Knowledge
    Selenium - https://www.seleniumhq.org/
    Page Object Model - https://medium.com/tech-tajawal/page-object-model-pom-design-pattern-f9588630800b
+   Cucumber - https://www.toolsqa.com/cucumber/cucumber-jvm-feature-file/
 
+Runnig Selenium Grid startServer.cmd
+Register Node register Chrome node
 Running test from command line: gradlew test
 
 
